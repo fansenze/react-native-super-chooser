@@ -1,14 +1,14 @@
 {
   "name": "react-native-super-chooser",
   "version": "0.0.1",
-  "description": "",
-  "main": "./lib",
+  "description": "a chooser of react-native",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:fansenze/react-native-super-chooser.git"
+    "url": "git+ssh://git@github.com/fansenze/react-native-super-chooser.git"
   },
   "keywords": [
     "react",
@@ -22,5 +22,13 @@
     "prop-types": "^15.5.10",
     "react": "^15.6.1",
     "react-native": "^0.48.2"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/fansenze/react-native-super-chooser/issues"
+  },
+  "homepage": "https://github.com/fansenze/react-native-super-chooser#readme",
+  "directories": {
+    "lib": "lib"
+  },
+  "devDependencies": {}
 }
