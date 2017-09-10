@@ -1,7 +1,6 @@
 # react-native-super-chooser
 
-## Getting Started
-----  
+## Getting Started  
 
 ### Installation  
 ```shell
