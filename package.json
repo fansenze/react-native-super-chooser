@@ -1,5 +1,5 @@
 {
-  "name": "react-native-chooser",
+  "name": "react-native-super-chooser",
   "version": "0.0.1",
   "description": "",
   "main": "./lib",
@@ -8,12 +8,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:fansenze/react-native-chooser.git"
+    "url": "git@github.com:fansenze/react-native-super-chooser.git"
   },
   "keywords": [
     "react",
     "react-native",
-    "select"
+    "select",
+    "chooser"
   ],
   "author": "senze.fan",
   "license": "MIT",
