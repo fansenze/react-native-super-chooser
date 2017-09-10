@@ -1,0 +1,25 @@
+{
+  "name": "react-native-select",
+  "version": "0.0.1",
+  "description": "",
+  "main": "./lib",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:fansenze/react-native-chooser.git"
+  },
+  "keywords": [
+    "react",
+    "react-native",
+    "select"
+  ],
+  "author": "senze.fan",
+  "license": "MIT",
+  "dependencies": {
+    "prop-types": "^15.5.10",
+    "react": "^15.6.1",
+    "react-native": "^0.48.2"
+  }
+}
