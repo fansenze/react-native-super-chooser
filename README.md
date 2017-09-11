@@ -64,7 +64,7 @@ const data = [
 this._SuperChooser.setVisible(true) // 显示组件
 this._SuperChooser.setVisible(false) // 隐藏组件
 ```
-![基础调用, 单选](http://ow3gtvu02.bkt.clouddn.com/react-native-chooser/3.png?imageView2/4/w/200/h/300)
+![基础调用, 单选](http://ow3gtvu02.bkt.clouddn.com/react-native-chooser/3.png?imageView2/4/w/200/h/300)  
 
 
 > chooser定位到底部, 显示取消按钮, 单选
@@ -76,7 +76,7 @@ this._SuperChooser.setVisible(false) // 隐藏组件
   showCancelBtn
 />
 ```
-![chooser定位到底部, 显示取消按钮, 单选](http://ow3gtvu02.bkt.clouddn.com/react-native-chooser/4.png?imageView2/4/w/200/h/300)  
+![chooser定位到底部, 显示取消按钮, 单选](http://ow3gtvu02.bkt.clouddn.com/react-native-chooser/4.png?imageView2/4/w/200/h/300)   
 
 ----
 
