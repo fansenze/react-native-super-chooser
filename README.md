@@ -63,8 +63,8 @@ const data = [
 本组件暴露了setVisible方法，参数类型为boolean，来进行组件的显示和隐藏调用
 this._SuperChooser.setVisible(true) // 显示组件
 this._SuperChooser.setVisible(false) // 隐藏组件
-```
-![基础调用, 单选](http://ow3gtvu02.bkt.clouddn.com/react-native-chooser/3.png?imageView2/4/w/200/h/300)  
+```   
+![基础调用, 单选](http://ow3gtvu02.bkt.clouddn.com/react-native-chooser/3.png?imageView2/4/w/200/h/300)   
   
 ----  
 
@@ -90,8 +90,8 @@ this._SuperChooser.setVisible(false) // 隐藏组件
   containerStyle={{ paddingTop: 64 }}
   itemStyle={{ borderRightWidth: 0.5 }}
 />
-```
-![多列, 单选](http://ow3gtvu02.bkt.clouddn.com/react-native-chooser/6.png?imageView2/4/w/200/h/300)  
+```   
+![多列, 单选](http://ow3gtvu02.bkt.clouddn.com/react-native-chooser/6.png?imageView2/4/w/200/h/300)  
 
 ----  
 
@@ -105,7 +105,7 @@ this._SuperChooser.setVisible(false) // 隐藏组件
   containerStyle={{ paddingTop: 20 }}
   contentStyle={{ height: 300 }}
 />
-```
+```  
 ![单列, 多选](http://ow3gtvu02.bkt.clouddn.com/react-native-chooser/5.png?imageView2/4/w/200/h/300)  
 
 ----  
@@ -127,8 +127,8 @@ this._SuperChooser.setVisible(false) // 隐藏组件
     </View>}
   onSubmit={(item) => console.log('自定义提交按钮 提交的结果: ', item)}
 />
-```
-![多列, 多选](http://ow3gtvu02.bkt.clouddn.com/react-native-chooser/7.png?imageView2/4/w/200/h/300)  
+```   
+![多列, 多选](http://ow3gtvu02.bkt.clouddn.com/react-native-chooser/7.png?imageView2/4/w/200/h/300)   
 
 ----  
 
@@ -147,5 +147,5 @@ this._SuperChooser.setVisible(false) // 隐藏组件
   columnWrapperStyle={{ justifyContent: 'space-around' }}
   contentStyle={{ height: 500, paddingTop: 20 }}
 />
-```
+```   
 ![多列, 多选](http://ow3gtvu02.bkt.clouddn.com/react-native-chooser/8.png?imageView2/4/w/200/h/300)  
