@@ -64,7 +64,7 @@ const data = [
 this._SuperChooser.setVisible(true) // 显示组件
 this._SuperChooser.setVisible(false) // 隐藏组件
 ```   
-![基础调用, 单选](http://ow3gtvu02.bkt.clouddn.com/react-native-chooser/3.png?imageView2/4/w/200/h/300)   
+![基础调用, 单选](http://ow3gtvu02.bkt.clouddn.com/react-native-chooser/3.png?imageView2/4/w/200/h/300/q/50)   
   
 ----  
 
@@ -77,7 +77,7 @@ this._SuperChooser.setVisible(false) // 隐藏组件
   showCancelBtn
 />
 ```
-![chooser定位到底部, 显示取消按钮, 单选](http://ow3gtvu02.bkt.clouddn.com/react-native-chooser/4.png?imageView2/4/w/200/h/300)   
+![chooser定位到底部, 显示取消按钮, 单选](http://ow3gtvu02.bkt.clouddn.com/react-native-chooser/4.png?imageView2/4/w/200/h/300/q/50)   
 
 ----  
 
@@ -91,7 +91,7 @@ this._SuperChooser.setVisible(false) // 隐藏组件
   itemStyle={{ borderRightWidth: 0.5 }}
 />
 ```   
-![多列, 单选](http://ow3gtvu02.bkt.clouddn.com/react-native-chooser/6.png?imageView2/4/w/200/h/300)  
+![多列, 单选](http://ow3gtvu02.bkt.clouddn.com/react-native-chooser/6.png?imageView2/4/w/200/h/300/q/50)  
 
 ----  
 
@@ -106,7 +106,7 @@ this._SuperChooser.setVisible(false) // 隐藏组件
   contentStyle={{ height: 300 }}
 />
 ```  
-![单列, 多选](http://ow3gtvu02.bkt.clouddn.com/react-native-chooser/5.png?imageView2/4/w/200/h/300)  
+![单列, 多选](http://ow3gtvu02.bkt.clouddn.com/react-native-chooser/5.png?imageView2/4/w/200/h/300/q/50)  
 
 ----  
 
@@ -128,7 +128,7 @@ this._SuperChooser.setVisible(false) // 隐藏组件
   onSubmit={(item) => console.log('自定义提交按钮 提交的结果: ', item)}
 />
 ```   
-![多列, 多选](http://ow3gtvu02.bkt.clouddn.com/react-native-chooser/7.png?imageView2/4/w/200/h/300)   
+![多列, 多选](http://ow3gtvu02.bkt.clouddn.com/react-native-chooser/7.png?imageView2/4/w/200/h/300/q/50)   
 
 ----  
 
@@ -148,4 +148,4 @@ this._SuperChooser.setVisible(false) // 隐藏组件
   contentStyle={{ height: 500, paddingTop: 20 }}
 />
 ```   
-![多列, 多选](http://ow3gtvu02.bkt.clouddn.com/react-native-chooser/8.png?imageView2/4/w/200/h/300)  
+![多列, 多选](http://ow3gtvu02.bkt.clouddn.com/react-native-chooser/8.png?imageView2/4/w/200/h/300/q/50)  
