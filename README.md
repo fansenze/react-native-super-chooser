@@ -38,7 +38,7 @@ npm i react-native-super-chooser
 |       contentStyle    |    Object    |            |         |  select内容 自定义样式  |
 |       checkedColor    |    String    |            |'#2296F3'|  选中的颜字体颜色  |
 |       itemStyle       |    Object    |            |         |  每一个选项的样式  |
-----
+----  
 
 ### Example
 
@@ -66,7 +66,7 @@ this._SuperChooser.setVisible(false) // 隐藏组件
 ```
 ![基础调用, 单选](http://ow3gtvu02.bkt.clouddn.com/react-native-chooser/3.png?imageView2/4/w/200/h/300)  
   
-----
+----  
 
 > chooser定位到底部, 显示取消按钮, 单选
 ```javascript
@@ -79,7 +79,7 @@ this._SuperChooser.setVisible(false) // 隐藏组件
 ```
 ![chooser定位到底部, 显示取消按钮, 单选](http://ow3gtvu02.bkt.clouddn.com/react-native-chooser/4.png?imageView2/4/w/200/h/300)   
 
-----
+----  
 
 > 多列, 单选
 ```javascript
@@ -93,7 +93,7 @@ this._SuperChooser.setVisible(false) // 隐藏组件
 ```
 ![多列, 单选](http://ow3gtvu02.bkt.clouddn.com/react-native-chooser/6.png?imageView2/4/w/200/h/300)  
 
-----
+----  
 
 > 单列, 多选
 ```javascript
@@ -108,7 +108,7 @@ this._SuperChooser.setVisible(false) // 隐藏组件
 ```
 ![单列, 多选](http://ow3gtvu02.bkt.clouddn.com/react-native-chooser/5.png?imageView2/4/w/200/h/300)  
 
-----
+----  
 
 > 多列, 多选, 自定义选中颜色、选项样式和提交按钮, 无取消按钮（取消按钮也可以自定义哦）
 ```javascript
@@ -130,7 +130,7 @@ this._SuperChooser.setVisible(false) // 隐藏组件
 ```
 ![多列, 多选](http://ow3gtvu02.bkt.clouddn.com/react-native-chooser/7.png?imageView2/4/w/200/h/300)  
 
-----
+----  
 
 > 多列, 多选, 自定义选项样式, 带取消按钮， 默认选中2个选项
 ```javascript
