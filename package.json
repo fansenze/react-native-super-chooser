@@ -1,10 +1,13 @@
 {
   "name": "react-native-super-chooser",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "a chooser of react-native",
   "main": "./lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "standard ./lib/*"
+  },
+  "standard": {
+    "parser": "babel-eslint"
   },
   "repository": {
     "type": "git",
@@ -30,5 +33,9 @@
   "directories": {
     "lib": "lib"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "snazzy": "^7.0.0",
+    "standard": "*"
+  }
 }

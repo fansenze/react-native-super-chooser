@@ -1,4 +1,6 @@
-# react-native-super-chooser
+# react-native-super-chooser  
+
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Getting Started  
 
