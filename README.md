@@ -158,7 +158,7 @@ this._SuperChooser.setVisible(false) // 隐藏组件
 
 ----  
 
-> 疯狂自定义, 😈 没有我自定义不了 💯 💯 💯  
+> 疯狂自定义, 😈 没有我自定义不了的 💯 💯 💯  
 
 ```javascript
 import { Dimensions } from 'react-native'
