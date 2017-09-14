@@ -15,6 +15,9 @@ npm i react-native-super-chooser
 + 在你自己项目的xcode中右键点击项目 -> ‘Add Files to ProjectName -> 选择 node_modules/react-native/React/Libraries/ART/ART.xcodeproj’
 + 将 libART.a 添加到 Linked Frameworks and Libraries  
 
+> 安卓5.0以下版本(及api版本小于21)时, 状态栏无法设置为沉浸式，所以容器默认高度 = 屏幕高度 - 状态栏高度   
+> 安卓5.0及以上和ios的容器高度默认屏幕高度。 若状态栏为**非沉浸式**，请自定义容器高度 (containerStyle中定义)  
+
 ----
 
 ### Props
@@ -31,6 +34,7 @@ npm i react-native-super-chooser
 |       onCancel        |    Function  |            |         |  取消触发的函数  |
 |       submitBtn       |    Element   |            |         |  自定义渲染提交按钮  |
 |       cancelBtn       |    Element   |            |         |  自定义渲染取消按钮  |
+|  btnContainerStyle    |    Object    |            |         |  自定义按钮容器组件样式  |
 |       numColumns      |    Number    |            |    1    |  与 React-Native 原生组件 Flat 的 numColumns 相同 (其大与1，且为多选模式时，每一个列表项勾选icon不存在) |
 |   columnWrapperStyle  |    Object    |            |         |  与 React-Native 原生组件 Flat 的 columnWrapperStyle 相同  |
 |       duration        |    Number    |            |   300   |  背景动画效果持续时间  |
@@ -66,7 +70,7 @@ const data = [
 this._SuperChooser.setVisible(true) // 显示组件
 this._SuperChooser.setVisible(false) // 隐藏组件
 ```   
-![基础调用, 单选](http://ow3gtvu02.bkt.clouddn.com/react-native-chooser/3.png?imageView2/4/w/200/h/300/q/50)   
+![基础调用, 单选](http://ow3gtvu02.bkt.clouddn.com/react-native-chooser/3.png?imageView2/4/w/200/h/300/q/35)   
   
 ----  
 
@@ -79,7 +83,7 @@ this._SuperChooser.setVisible(false) // 隐藏组件
   showCancelBtn
 />
 ```
-![chooser定位到底部, 显示取消按钮, 单选](http://ow3gtvu02.bkt.clouddn.com/react-native-chooser/4.png?imageView2/4/w/200/h/300/q/50)   
+![chooser定位到底部, 显示取消按钮, 单选](http://ow3gtvu02.bkt.clouddn.com/react-native-chooser/4.png?imageView2/4/w/200/h/300/q/35)   
 
 ----  
 
@@ -93,7 +97,7 @@ this._SuperChooser.setVisible(false) // 隐藏组件
   itemStyle={{ borderRightWidth: 0.5 }}
 />
 ```   
-![多列, 单选](http://ow3gtvu02.bkt.clouddn.com/react-native-chooser/6.png?imageView2/4/w/200/h/300/q/50)  
+![多列, 单选](http://ow3gtvu02.bkt.clouddn.com/react-native-chooser/6.png?imageView2/4/w/200/h/300/q/35)  
 
 ----  
 
@@ -108,7 +112,7 @@ this._SuperChooser.setVisible(false) // 隐藏组件
   contentStyle={{ height: 300 }}
 />
 ```  
-![单列, 多选](http://ow3gtvu02.bkt.clouddn.com/react-native-chooser/5.png?imageView2/4/w/200/h/300/q/50)  
+![单列, 多选](http://ow3gtvu02.bkt.clouddn.com/react-native-chooser/5.png?imageView2/4/w/200/h/300/q/35)  
 
 ----  
 
@@ -130,7 +134,7 @@ this._SuperChooser.setVisible(false) // 隐藏组件
   onSubmit={(item) => console.log('自定义提交按钮 提交的结果: ', item)}
 />
 ```   
-![多列, 多选](http://ow3gtvu02.bkt.clouddn.com/react-native-chooser/7.png?imageView2/4/w/200/h/300/q/50)   
+![多列, 多选](http://ow3gtvu02.bkt.clouddn.com/react-native-chooser/7.png?imageView2/4/w/200/h/300/q/35)   
 
 ----  
 
@@ -150,4 +154,30 @@ this._SuperChooser.setVisible(false) // 隐藏组件
   contentStyle={{ height: 500, paddingTop: 20 }}
 />
 ```   
-![多列, 多选](http://ow3gtvu02.bkt.clouddn.com/react-native-chooser/8.png?imageView2/4/w/200/h/300/q/50)  
+![多列, 多选](http://ow3gtvu02.bkt.clouddn.com/react-native-chooser/8.png?imageView2/4/w/200/h/300/q/35)  
+
+----  
+
+> 疯狂自定义, 😈 没有我自定义不了 💯 💯 💯  
+
+```javascript
+import { Dimensions } from 'react-native'
+const { width, height } = Dimensions.get('window')
+<SuperChooser
+  ref={(e) => { this._SuperChooser = e }}
+  dataSource={data}
+  multiple
+  numColumns={2}
+  checkedColor='#000'
+  defaultVal={defaultVal}
+  backgroundColor='transparent'
+  containerStyle={{ width: 200, height: 222, left: (width - 200) / 2, top: (height - 222) / 2 }}
+  contentStyle={{ flex: 1, backgroundColor: '#000', borderRadius: 5 }}
+  columnWrapperStyle={{ paddingHorizontal: 7, paddingTop: 13, paddingBottom: 0, justifyContent: 'space-between' }}
+  btnContainerStyle={{ paddingTop: 5, paddingHorizontal: 5, justifyContent: 'space-around' }}
+  itemStyle={{ backgroundColor: '#f7f7f7', marginHorizontal: 7, height: 30, marginTop: 1, marginBottom: 0 }}
+  submitBtn={<View style={{ backgroundColor: '#000', borderRadius: 3, height: 25, width: 80, alignItems: 'center', justifyContent: 'center', marginBottom: 5 }}><Text style={{ color: '#fff', fontSize: 13 }}>确定</Text></View>}
+  cancelBtn={<View style={{ borderColor: '#666', borderWidth: 1, borderRadius: 3, height: 25, width: 80, alignItems: 'center', justifyContent: 'center', marginBottom: 5 }}><Text style={{ color: '#000', fontSize: 13 }}>取消</Text></View>}
+/>
+```  
+![疯狂自定义](http://ow3gtvu02.bkt.clouddn.com/react-native-chooser/9.png?imageView2/4/w/200/h/300/q/35)  
