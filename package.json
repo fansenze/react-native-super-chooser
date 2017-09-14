@@ -4,7 +4,7 @@
   "description": "a chooser of react-native",
   "main": "./lib/index.js",
   "scripts": {
-    "test": "standard ./lib/*"
+    "lint": "standard --verbose | snazzy"
   },
   "standard": {
     "parser": "babel-eslint"
