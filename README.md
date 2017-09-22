@@ -46,7 +46,16 @@ npm i react-native-super-chooser
 |       itemStyle       |    Object    |            |         |  每一个选项的样式  |
 ----  
 
-### Example
+### Example  
+
+> 引用  
+```javascript
+import SuperChooser from 'react-native-super-chooser'
+import { SuperChooser } from 'react-native-super-chooser'
+// 上面两种方式都可以引入模块
+import { Symbol } from 'react-native-super-chooser'
+// 额外暴露了一个Symbol组件，主要是2个简单的Art绘图
+```
 
 > 基础调用, 单选
 ```javascript
