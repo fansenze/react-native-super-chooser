@@ -30,6 +30,7 @@ npm i react-native-super-chooser
 | isRemoveWhileSelected |    Boolean   | true/false |  false  |  选中的单元是否从列表中删除，多选模式时无效  |
 |     showCancelBtn     |    Boolean   | true/false |  false  |  是否显示取消按钮  |
 |       defaultVal      | Array/Object |            |         |  默认选中项 (多选模式未开启时，传入数组的话，只选中数组第一位)  |
+|       renderTitle     |    Element   |            |         |  头部标题元素   |
 |       onSubmit        |    Function  |            |         |  提交触发的函数  |
 |       onCancel        |    Function  |            |         |  取消触发的函数  |
 |       submitBtn       |    Element   |            |         |  自定义渲染提交按钮  |
