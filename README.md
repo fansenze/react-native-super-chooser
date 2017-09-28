@@ -35,16 +35,16 @@ npm i react-native-super-chooser
 |       onCancel        |    Function  |            |         |  取消触发的函数  |
 |       submitBtn       |    Element   |            |         |  自定义渲染提交按钮  |
 |       cancelBtn       |    Element   |            |         |  自定义渲染取消按钮  |
-|  btnContainerStyle    |    Object    |            |         |  自定义按钮容器组件样式  |
+|  btnContainerStyle    |              |            |         |  自定义按钮容器组件样式  |
 |       numColumns      |    Number    |            |    1    |  与 React-Native 原生组件 Flat 的 numColumns 相同 (其大与1，且为多选模式时，每一个列表项勾选icon不存在) |
-|   columnWrapperStyle  |    Object    |            |         |  与 React-Native 原生组件 Flat 的 columnWrapperStyle 相同  |
+|   columnWrapperStyle  |              |            |         |  与 React-Native 原生组件 Flat 的 columnWrapperStyle 相同  |
 |       duration        |    Number    |            |   300   |  背景动画效果持续时间  |
 |       position        |    String   |'top'/'bottom'|  'top'  |  选择框的定位  |
 |    backgroundColor    |    String    |            | rgba(0, 0, 0, 0.3) |  遮罩层颜色  |
-|    containerStyle     |    Object    |            |         |  chooser外部容器 自定义样式  |
-|       contentStyle    |    Object    |            |         |  select内容 自定义样式  |
+|    containerStyle     |              |            |         |  chooser外部容器 自定义样式  |
+|       contentStyle    |              |            |         |  select内容 自定义样式  |
 |       checkedColor    |    String    |            |'#2296F3'|  选中的颜字体颜色  |
-|       itemStyle       |    Object    |            |         |  每一个选项的样式  |
+|       itemStyle       |              |            |         |  每一个选项的样式  |
 ----  
 
 ### Example  
