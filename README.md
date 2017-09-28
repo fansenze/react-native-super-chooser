@@ -45,6 +45,7 @@ npm i react-native-super-chooser
 |       contentStyle    |              |            |         |  select内容 自定义样式  |
 |       checkedColor    |    String    |            |'#2296F3'|  选中的颜字体颜色  |
 |       itemStyle       |              |            |         |  每一个选项的样式  |
+|       listStyle       |              |            |         |  FlatList的样式  |
 ----  
 
 ### Example  
