@@ -1,6 +1,6 @@
 {
   "name": "react-native-super-chooser",
-  "version": "1.4.4",
+  "version": "1.5.4",
   "description": "a chooser of react-native",
   "main": "./index.js",
   "scripts": {
